@@ -15,11 +15,15 @@ import static org.junit.jupiter.api.Assertions.*;
 public class OrdenamientoTest {
     @Test
     public void testNo() {
-        String valorEsperado = "0 1 6 7";
+        String valorEsperado = "0, 1, 6, 7";
         String valorActual = Ordenamiento.evaluar(7, 0, 6, 1);
         assertEquals(valorEsperado, valorActual);
     }
     
     // TODO: Agrega tus otros casos de prueba aquí
-    
+        public void test() {
+        String valorEsperado = "1, 2, 7, 8";
+        String valorActual = Ordenamiento.evaluar(7, 1, 8, 2);
+        assertEquals(valorEsperado, valorActual);
+    }
 }

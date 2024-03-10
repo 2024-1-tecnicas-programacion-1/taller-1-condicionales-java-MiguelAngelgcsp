@@ -11,7 +11,30 @@ import java.util.Scanner;
 public class Ordenamiento {
     public static String evaluar(int numero1, int numero2, int numero3, int numero4) {
         // TODO: Coloca aquí el código del ejercicio 5: Ordenamiento
-        return "";
+    int[] numeros = {numero1, numero2, numero3, numero4};
+        
+        
+        for (int i = 0; i < numeros.length - 1; i++) {
+            for (int j = 0; j < numeros.length - i - 1; j++) {
+                if (numeros[j] > numeros[j + 1]) {
+                    
+                    int temp = numeros[j];
+                    numeros[j] = numeros[j + 1];
+                    numeros[j + 1] = temp;
+                }
+            }
+        }
+        
+        
+        String resultado = "";
+        for (int i = 0; i < numeros.length; i++) {
+            resultado += numeros[i];
+            if (i < numeros.length - 1) {
+                resultado += ", ";
+            }
+        }
+        
+        return resultado;
     }
     
     public static void main(String[] args) {
