@@ -19,13 +19,13 @@ public class AnnosBisiestos {
         {
             return(" es bisiesto");
         }
-        else if (anno>=1582 && anno % 400 !=0 )
+        else if (anno>=1582 && anno % 400 ==0 )
         {
-             return(" es bisiesto");  
+             return(" no es bisiesto");  
         }
         else
         {
-            return (" no es bisiesto");   
+            return (" es bisiesto");   
         }
         
         

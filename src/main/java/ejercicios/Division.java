@@ -21,7 +21,7 @@ public class Division {
                 + "Cociente: " + cociente + "\n"
                 + "Residuo: " + residuo);          
         }
-         if(dividendo%divisor > 0  )
+         else
         {
           int cociente =dividendo/divisor;
           int residuo = dividendo%divisor;
@@ -31,12 +31,6 @@ public class Division {
         }
 
         
-        int cociente = 0;
-        int residuo = 0;
-        String respuesta = "La división es exacta. \n"
-                + "Cociente: " + cociente + "\n"
-                + "Residuo: " + residuo;
-        return respuesta;
     }
     
     public static void main(String[] args) {

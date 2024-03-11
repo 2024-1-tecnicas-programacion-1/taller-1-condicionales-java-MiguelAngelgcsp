@@ -18,16 +18,16 @@ public class Triangulo {
        {
            return("El triangulo es equilatero");
        }
-        if ( a==b && a!=c || a==c && a!=b || b==c && b!=a )
+        if ( a==b || a==c || b==c  )
        {
            return("El triangulo es isoceles");
        }
-        if ( a!= b && a!=c && b!=c )
+        else 
        {
            return("El triangulo es escaleno");
        }
         
-        return "";
+        
     }
     
     public static void main(String[] args) {
